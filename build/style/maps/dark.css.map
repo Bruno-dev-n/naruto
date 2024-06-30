@@ -1,0 +1,1 @@
+{"version":3,"sources":["dark.scss"],"names":[],"mappings":"AAAA,eACI,yBACA,cAEJ,aACI,cAEJ,mBACI","file":"../dark.css","sourcesContent":["body.dark-mode {\r\n    background-color: #212529;\r\n    color: #899095;\r\n}\r\n.dark-mode a {\r\n    color: #dee2e6;\r\n}\r\n.dark-mode a:hover {\r\n    color: #3cc368;\r\n}\r\n"]}

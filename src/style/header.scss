@@ -1,0 +1,39 @@
+@import 'variaveis';
+@import'dark';
+
+.header {
+    padding: 0.5% 1.5%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    left: 100%;
+    font-family: "Merienda", cursive;
+    z-index: 7;
+
+    &__cont {
+        display: flex;
+        justify-content: space-between;
+        background-color: $cordefundo2;
+        align-items: center;
+        padding: 1%;
+        border-radius: 60px;
+        margin: 0 auto;
+
+        &--search{
+            padding: 10px;
+            border-radius: 30px;
+            
+        }
+        
+        &--buttonLight{
+            background-color: $cordefundo;
+            padding: 10px;
+            border-radius: 30px;
+            font-size: large;
+            &:hover{
+                background-color: rgb(56, 29, 3);
+                color: white;
+            }
+        }
+    }
+}

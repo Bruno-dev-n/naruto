@@ -1,0 +1,16 @@
+@import'variaveis';
+@import'header';
+@import'dark';
+@import'hero';
+@import'eps';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+body{
+    background-color:rgb(253, 155, 0,1) !important;
+    cursor: url(..//imagens/cusor/shurikin.png), auto !important;
+}

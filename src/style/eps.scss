@@ -1,0 +1,39 @@
+@import'variaveis';
+.eps{
+        max-width: 1044px;
+        margin: 0 auto;
+        font-family: "Merienda", cursive;
+        text-align: center;
+
+    &__classic{
+        padding: 2% ;
+        
+        &__list{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            &--item{
+                
+                padding: 6%;
+                background-color: rgb(253, 172, 106);
+                border: 1px solid red($color: #000000);
+        
+            }
+        }
+    }
+
+}
+
+.cor2{
+    background-color: $cordefundo2;
+}
+.margintop{
+    margin-top: 1.3%;
+}
+.esconder{
+    display: none;
+}
+.mostrar{
+    padding: auto;
+}
