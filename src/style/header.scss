@@ -17,12 +17,17 @@
         align-items: center;
         padding: 1%;
         border-radius: 60px;
-        margin: 0 auto;
-
         &--search{
             padding: 10px;
             border-radius: 30px;
-            
+            @media screen and (min-width: 320px) {
+                padding: 2px;
+                width: 40%;
+                margin-left: 22%;
+                }
+                @media screen and (min-width: 768px) {
+                padding: 2px;
+                }
         }
         
         &--buttonLight{
@@ -30,6 +35,14 @@
             padding: 10px;
             border-radius: 30px;
             font-size: large;
+            @media screen and (min-width: 320px) {
+                padding: 2px;
+                width: 33%;
+                font-size: 15px;
+                }
+                @media screen and (min-width: 768px) {
+                padding: 2px;
+                }
             &:hover{
                 background-color: rgb(56, 29, 3);
                 color: white;

@@ -3,6 +3,7 @@
 @import'dark';
 @import'hero';
 @import'eps';
+@import'personagens';
 *{
     padding: 0;
     margin: 0;
@@ -10,7 +11,50 @@
     list-style: none;
     
 }
+/* Funciona no Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: $cordefundo2 $cordefundo;
+    }
+  /* Funciona no Chrome, Edge e Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+    }
+  *::-webkit-scrollbar-track {
+    background: orange;
+    }
+  *::-webkit-scrollbar-thumb {
+    background-color: $cordefundo2;
+    border-radius: 20px;
+    border: 3px solid $cordefundo;
+    }
+
 body{
     background-color:rgb(253, 155, 0,1) !important;
-    cursor: url(..//imagens/cusor/shurikin.png), auto !important;
+    
+}
+.momentos, .footer{
+    max-width: 1044px;
+    margin: 0 auto;
+    font-family: "Merienda", cursive;
+    text-align: center;
+    iframe{
+        margin: 2%;
+        padding: 2%;
+        border-radius: 15px;
+        max-width:100% ;
+        width: 80%;
+
+    }
+}
+footer{
+    background-color: $cordefundo2;
+    border-radius: 30px;
+    padding: 3% auto;
+    @media screen and (min-width: 320px){
+        h6{
+            font-size: 10px;
+        } 
+
+    }
 }

@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
-        <script src="./src/scripts/dark.js"></script>
+        
 </head>
 <body>
     <header class="header">
@@ -19,11 +19,15 @@
                 <input class="header__cont--search" type="search" name="q" placeholder="Pesquisa">
                 <button class="header__cont--buttonLight" type="submit">Pesquisar</button>
             </form>
-            <button class="--dark header__cont--buttonLight" type="button">Modo escuro</button>
             
         </div>
 
     </header>
+    <style>
+        html,li,img,div{
+            cursor: url('./src/images/cusor/Shuriken.cur'),auto;
+        }
+    </style>
     <section class="hero">
         <div id="carouselExample" class="carousel slide " data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -82,7 +86,7 @@
                 
             </ul>
             <button type="button" class="header__cont--buttonLight cor2" id="classic">Ver mais</button>
-            <ul class="eps__classic__list margintop esconder" data-tab-button>
+            <ul class="eps__classic__list margintop esconder">
                 <li class="eps__classic__list--item"> 
                     <a href="https://otakuanimesscc.com/episodio/6146">EP. 7</a>
                 </li>
@@ -133,7 +137,7 @@
                 
             </ul>
             <button type="button" class="header__cont--buttonLight cor2" id="shipuden">Ver mais</button>
-            <ul class="eps__classic__list margintop esconder" data-tab-button>
+            <ul class="eps__classic__list margintop esconder">
                 <li class="eps__classic__list--item"> 
                     <a href="https://otakuanimesscc.com/episodio/6146">EP. 8</a>
                 </li>
@@ -158,6 +162,62 @@
             </ul>
         </div>
     </section>
+    <section class="personagens">
+        <h3>personagens principais</h3>
+        <div class="card" style="width: 18rem;">
+            <img src="./src/images/personagens-naruto/naruto.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Naruto Uzumaki</h5>
+            <p class="card-text">Protagonista da história, um órfão com o sonho de se tornar o ninja mais forte da Vila da Folha. Suas principais técnicas incluem o Kage Bunshin no Jutsu e o Rasengan.</p>
+            
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./src/images/personagens-naruto/naruto-gif-6.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Sasuke Uchiha</h5>
+            <p class="card-text">Protagonista da história, um órfão com o sonho de  Rival de Naruto e último sobrevivente do clã Uchiha. Ele busca vingança contra seu irmão, Itachi. Suas principais técnicas incluem o Chidori e a Bola de Fogo</p>
+            
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./src/images/personagens-naruto/sakura.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Sakura Haruno</h5>
+            <p class="card-text"> Companheira de equipe de Naruto e Sasuke. Ela é dedicada e possui habilidades em Ninjutsu Médico e Super Força.</p>
+            
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./src/images/personagens-naruto/kakashi.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Kakashi Hatake</h5>
+            <p class="card-text">  Professor do Time 7 (Naruto, Sasuke e Sakura). Ele é um dos ninjas mais fortes da Vila da Folha, com técnicas como o Raikiri e o Kamui.</p>
+            
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./src/images/personagens-naruto/hinata.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Hinata Hyuga</h5>
+            <p class="card-text"> Colega de classe de Naruto e interesse amoroso. Ela é parte do clã Hyuga e possui habilidades em Byakugan</p>
+            
+            </div>
+        </div>
+    </section>
+    
+    <section class="momentos">
+        <h3>Cenas Engraçadas</h3>
+        <iframe width="887" height="499" src="https://www.youtube.com/embed/vpfvwYdbsfo" title="cenas engraçadas de naruto  parte 2 reupado" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="887" height="499" src="https://www.youtube.com/embed/OeoVakrbzbU" title="Cenas Mais Engraçadas de Naruto | Parte 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="887" height="499" src="https://www.youtube.com/embed/kUWWKBSoWGo" title="Sai Fala que Ino e Bonita e Sakura fica Braba" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p> Para cenas emocionates, epicas e lutas inesquecives assiste o anime.</p>
+
+    </section>
+    <footer class="footer">
+        <h6>“Naruto - Bandai. Todos os direitos reservados por Kishimoto.”</h6>
+    </footer>
+    <script src="./src/scripts/dark.js"></script>
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

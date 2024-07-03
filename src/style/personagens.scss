@@ -1,0 +1,30 @@
+@import'variaveis';
+.personagens{
+    max-width: 1044px;
+    margin: 0 auto;
+    font-family: "Merienda", cursive;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    h3{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    .card{
+        margin-left:1% ;
+        background-color: rgb(253, 172, 106);
+        margin: 2%;
+        &:hover{
+            background-color: pink;
+            cursor: url('../imagens/cursor/kunai.ani'), auto;
+        }
+        .card-img-top{
+
+            padding: 2%;
+        }
+
+    }
+}

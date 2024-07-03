@@ -1,29 +1,24 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('[data-tab-button]');
+const botao1 = document.getElementById('classic');
+botao1.addEventListener('click', alterarTextoBotao1);
 
-    for (let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener('click', function(button) {
-            const tabs = button.target.dataset.tabButton;
-            console.log(`Botão clicado: ${tabs}`); // Log para verificar qual botão foi clicado
-            const tab = document.querySelector(`[data-tab-id=${tabs}]`);
-            nonetabs();
-            tab.classList.add('mostrar');
-            removeButtonActive();
-            button.target.classList.add('esconder');
-        });
-    }
-});
+const botao2 = document.getElementById('shipuden');
+botao2.addEventListener('click', alterarTextoBotao2);
 
-function removeButtonActive() {
-    const buttons = document.querySelectorAll('[data-tab-button]');
-    for (let i = 0; i < buttons.length; i++) {
-        buttons[i].classList.remove('esconder');
-    }
+function alterarTextoBotao1() {
+    const proximaUl = botao1.nextElementSibling;
+    alterarTextoDoBotao(proximaUl, botao1);
 }
 
-function nonetabs() {
-    const containertabs = document.querySelectorAll('[data-tab-id]');
-    for (let i = 0; i < containertabs.length; i++) {
-        containertabs[i].classList.remove('mostrar');
+function alterarTextoBotao2() {
+    const proximaUl = botao2.nextElementSibling;
+    alterarTextoDoBotao(proximaUl, botao2);
+}
+
+function alterarTextoDoBotao(ulElement, botao) {
+    if (ulElement && ulElement.tagName === 'UL') {
+        ulElement.classList.toggle('esconder');
+        botao.textContent = ulElement.classList.contains('esconder') ? 'Ver mais' : 'Ver menos';
+    } else {
+        console.log('Não há próxima UL.');
     }
 }
